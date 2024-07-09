@@ -1,0 +1,215 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/logo_home.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>أنشئ سيرتك الذاتية الاحترافية في دقائق</title>
+    </head>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav" id="nav">
+
+                <!-- Toggle button -->
+                <div class="nav_toggle" id="nav_toggle">
+                    <i class="ri-apps-2-fill"></i>
+                </div>
+
+            <div class="nav_in" id="nav_in">
+                <a href="contenr.html"><button class="nav__log">تسجيل الدخول</button></a>
+                <a href="https://wa.me/01025347603" target="_blank"><button class="Create">إنشاء سيرة ذاتية</button></a>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li>
+                        <a class="nav_link" href="FREE CV REVIEW .html">مراجعة مجانية</a>
+                    </li>
+
+                    <li>
+                        <a class="nav_link" href="trainig.html">دورات تدريبية</a>
+                    </li>
+
+                    <li>
+                        <a class="nav_link" href="employment.html">توظية</a>
+                    </li>
+
+                    <li>
+                        <a class="nav_link" href="contenr.html">تواصل معنا</a>
+                    </li>
+
+                    <li>
+                        <a class="nav_link" href="about.html">من نحن</a>
+                    </li>
+
+                    <li>
+                        <a class="nav_link" href="index.html">الرئيسية</a>
+                    </li>
+
+                </ul>
+
+                    <button class="nav__log">تسجيل الدخول</button>
+
+                    <!-- Close button -->
+                <div class="nav_close" id="nav_close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+            </div>
+            
+                <a href="index.html" class="nav_logo" id="nav_logo">
+
+                <div>
+                    <img src="assets/img/logo.png" alt="image" width="50px">
+                </div>
+                    A.O Graphic
+                </a>
+
+            </nav>
+            
+        </header>
+        <!--  -->
+        <div class="vadieo">
+            <h1>مرحبا بك في عارض الفيديوهات</h1>
+            <input type="text" id="searchInput" placeholder="ابحث عن الفيديو..." onkeyup="searchVideos()">
+        </div>
+        <div class="container" id="videoContainer">
+            <div class="video-group" data-group="group1">
+                <h2>مجموعة الفيديوهات الأولى</h2>
+                <div class="video-items">
+                    <div class="video-item">
+                        <video controls onclick="openModal(this)">
+                            <source src="assets/img/Recording 2024-07-08 162328.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو. يرجى تحديث المتصفح.
+                        </video>
+                        <h3>عنوان الفيديو الأول</h3>
+                    </div>
+                    <div class="video-item">
+                        <video controls onclick="openModal(this)">
+                            <source src="video2.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو. يرجى تحديث المتصفح.
+                        </video>
+                        <h3>عنوان الفيديو الثاني</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="video-group" data-group="group2">
+                <h2>مجموعة الفيديوهات الثانية</h2>
+                <div class="video-items">
+                    <div class="video-item">
+                        <video controls onclick="openModal(this)">
+                            <source src="video3.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو. يرجى تحديث المتصفح.
+                        </video>
+                        <h3>عنوان الفيديو الثالث</h3>
+                    </div>
+                    <div class="video-item">
+                        <video controls onclick="openModal(this)">
+                            <source src="video4.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو. يرجى تحديث المتصفح.
+                        </video>
+                        <h3>عنوان الفيديو الرابع</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-group" data-group="group1">
+                <h2>مجموعة الفيديوهات 3</h2>
+                <div class="video-items">
+                    <div class="video-item">
+                        <video controls onclick="openModal(this)">
+                            <source src="video1.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو. يرجى تحديث المتصفح.
+                        </video>
+                        <h3>عنوان الفيديو الأول</h3>
+                    </div>
+                    <div class="video-item">
+                        <video controls onclick="openModal(this)">
+                            <source src="video2.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو. يرجى تحديث المتصفح.
+                        </video>
+                        <h3>2عنوان الفيديو الثاني</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <video id="modalVideo" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+
+        
+        <!--==================== FOOTER ====================-->
+            <footer class="footer">
+                <div class="footer_text">
+                <div class="footer_1">
+                <table>
+                    <tr>
+                            <th>الموارد</th>
+                    </tr>
+                    <tbody>
+                            <tr>
+                            <td><a href="#">السيرة الذاتية</a></td>
+                            <td><a href="#">خطاب تقديم على وظيفة</a></td>
+                            </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="footer_2">
+                <table>
+                    <tr>
+                            <th>المنتج</th>
+                    </tr>
+                    <tbody>
+                            <tr>
+                            <td><a href="#">التسعير</a></td>
+                            <td><a href="#popular">التقييمات</a></td>
+                            </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="footer_3">
+                <table>
+                    <tr>
+                            <th>الدعم</th>
+                    </tr>
+                    <tbody>
+                            <tr>
+                            <td> <a href="#">a.ographic2050@gmail.com</a></td>
+                            <td><a href="tel:+01025347603">01025347603</a></td>
+                            <td><a href="contenr.html">تواصل معنا</a></td>
+                            <td><a href="#">تعليمات الاستخدام</ta></d>
+                            <td><a href="about.html">من نحن</a></td>
+                            </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="footer_5">
+                
+                    <a href="#"><img src="assets/img/google-play-badge-ar.png" alt="image"></a>
+                    <a href="#"><img src="assets/img/app-store-badge-ar.svg" alt="image"></a>
+                
+                </div>
+                <div class="footer_6">
+                <a href="https://www.facebook.com/profile.php?id=100088715142417 " target="_blank"><img src="assets/img/facebook_108044.png" alt="facebook"></a>
+                <a href="#" target="_blank"><img src="assets/img/instagram_108043.png" alt="instagram"></a>
+                <a href="https://wa.me/01025347603" target="_blank"><img src="assets/img/whatsapp_108042 - Copy.png" alt="whatsapp"></a>
+                </div>
+                </div>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+    </html>
